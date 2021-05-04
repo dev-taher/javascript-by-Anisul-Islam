@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Testing Project</title>
+</head>
+<body>
+    
+
+   <script>
+
+var students = [
+        
+        {
+           id:101,
+           name:'Taher',
+           gpa:2.80
+        },
+       {
+           id:102,
+           name:'Zakir',
+           gpa:5.00
+       },
+       {
+           id:103,
+           name:'Arif',
+           gpa:2.83
+       },
+       {
+           id:104,
+           name:'Sraboni',
+           gpa:4.84
+       }
+   ]
+   
+
+   function studentNames1(){
+      return  students.filter(function(x){
+        return x.gpa > 3;
+    }).map(function(y){
+        return y.name;
+    });
+   }
+
+   const studentNames2 = () => {
+       return students.filter((x) => x.gpa < 3).map((y) => y.name);
+   }
+   console.log(studentNames1());
+   console.log(studentNames2());
+
+   </script>
+</body>
+</html>

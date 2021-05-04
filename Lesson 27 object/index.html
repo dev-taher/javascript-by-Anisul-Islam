@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Object</title>
+</head>
+<body>
+    
+
+    <script>
+    /*    var student1 = {
+
+            name:"Anis",
+            age : 27,
+            cgpa : 3.45 ,
+            lang : ["Bangla" , "English"],
+        }
+        var student2 = {
+
+            name:"Zakir",
+            age : 22,
+            cgpa : 3.85 ,
+            lang : ["Chinese" , "Japanese"],
+        }
+        var student3 = {
+
+            name:"Arif",
+            age : 21,
+            cgpa : 3.21 ,
+            lang : ["Nepalese" , "Urdu"],
+        }
+        document.write(student1.name);
+        document.write(student1.lang);
+        document.write(student1.cgpa);
+        document.write(student1.age); */ 
+
+        function Student (name,age, cgpa,lang){
+            this.name = name;
+            this.age = age;
+            this.cgpa = cgpa;
+            this.lang = lang;
+
+            this.display = function (){
+                document.write(this.name + "<br/>");
+                document.write(this.age + "<br/>" );
+                document.write(this.cgpa + "<br/>");
+                document.write(this.lang + "<br/>");
+            }
+
+        }
+        var student1 = new Student(" Anis " , 27 , 3.45 , [" Bangla" , " English "]);
+        var student2 = new Student(" Zakir " , 22 , 3.85 , [" Chinese " , " Japanese "]);
+        var student3 = new Student(" Arif " , 21 , 3.21 , [" Nepalese " , " Urdu "]);
+
+        student1.display();
+        student2.display();
+        student3.display();
+     
+    </script>
+</body>
+</html>

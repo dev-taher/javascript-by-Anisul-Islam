@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Related Methods </title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        //shift opposite of pop
+        // var names = ["Anis" , "Zakir" ,"Zafor","Arif"];
+        //  names.shift();
+        //  document.write(names);
+
+         //unshift opposite of push
+        //  var names = ["Anis" , "Zakir" , "Zafor" , "Arif" ];
+        //  names.unshift("Sani");
+        //  document.write(names);
+
+         //adding element using splice 
+         // var names = ["Anis" , "Zakir" , "Zafor" , "Arif" ];
+        //  names.splice( 2 , 1 , "Rashed" , "Rahim");
+        //  document.write(names);
+
+
+        //remove element using splice
+        // var names = ["Anis" , "Zakir" , "Zafor" , "Arif" ];
+        // names.splice(1,2);
+        // document.write(names);
+
+        //slice methods
+        // var names = ["Anis "," Zakir "," Zafor "," Arif " ];
+        // var array = names.slice(1);
+        // document.write(array + "<br/>");
+        // document.write(names);
+
+        //sort methods
+        // var names = ["Anis "," Zakir "," Zafor "," Arif " ];
+        // var sortedNames = names.sort();
+        // names.reverse();
+        // document.write(sortedNames );
+
+        //number sorted
+        var numbers = [20,10,5,15,40,2];
+        numbers.sort(function(a,b){
+            // return a - b ;
+            return b - a ;
+        });
+        document.write(numbers);
+        
+    </script>
+</body>
+</html>
